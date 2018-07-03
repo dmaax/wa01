@@ -1,32 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
+ <meta charset="UTF-8"> 
 	<title>DMAX's Web Page</title>
+	<style >
+		table {
+			font-family: Arial;
+			border: 2px solid black;
+			border-collapse: collapse;
+			width: 50%;
+			margin: 20px;
+		}
+		th, td {
+			border: 1px solid black;
+			padding: 5px;
+			text-align: center;
+		}
+
+		th{
+			background-color: #cee1ff;
+		}
+		td {
+			background-color: #afceff;
+		}
+		h1, h2, form 	{
+			font-family: Arial;
+		}
+
+	</style>
 </head>
 <body>
 	<center>
-	 <h1>Hello, world!</h1>
-	 <img src="https://dt7v1i9vyp3mf.cloudfront.net/styles/news_large/s3/imagelibrary/L/LiveTech_01-1110-Rjhe70f4QWXViMfgZsO80y3K__lHBDY8.jpg" width="30%">
+
+	 <h1>Tabelas, notas</h1>
+
 	 <table>
 
 	 <tr>
-	 	<th>Title</th>
-	 	<th>Artist(s)</th>
-	 	<th>Genre</th>
-	 	<th>Key</th>
+	 	<th>Nome</th>
+	 	<th>Artista(s)</th>
+	 	<th>Gênero</th>
+	 	<th>Tonalidade</th>
 	 	<th>BPM</th>
-	 	<th>Duration</th>
+	 	<th>Duração</th>
 	 </tr>
 
-    	<tr>
-	 		<td>Bass</td>
-	 		<td>Sharam Jey, Chemical Surf & Illusionize</td>
-	 		<td>House</td>
-	 		<td>?</td>
-	 		<td>122</td>
-	 		<td>7'</td>
-	 	</tr>
+     <tr>
+	 	<td>Bass</td>
+	 	<td>Sharam Jey, Chemical Surf & Illusionize</td>
+	 	<td>House</td>
+	 	<td>?</td>
+	 	<td>122</td>
+	 	<td>7:09</td>
+	 </tr>
+
+	 <tr>
+	 	<td>Horns</td>
+	 	<td>DUTAH</td>
+	 	<td>Melodic Techno</td>
+	 	<td>7A</td>
+	 	<td>122</td>
+	 	<td>6:59</td>
+	 </tr>
+
+	 <tr>
+	 	<td>Make You Mine (Bootleg)</td>
+	 	<td>JORD & Malive</td>
+	 	<td>Low Bass</td>
+	 	<td>6A</td>
+	 	<td>124</td>
+	 	<td>4:50</td>
+	 </tr>
+
 	 </table>
-	</center>
+
+	 <h2>Adicione mais tracks:</h2>
+
+	 <!--<form action="/submit.php"-->
+
+	 <form>
+	 	Nome:<br>
+  	 	<input type="text" name="nome"><br>
+
+  	 	Artista(s):<br>
+     	<input type="text" name="artista"><br>
+
+     	Gênero:<br>
+     	<input type="text" name="genero"><br>
+
+     	Tonalidade:<br>
+     	<input type="text" name="tonalidade"><br>
+
+     	BPM:<br>
+     	<input type="text" name="bpm"><br>
+
+  	 	<input type="submit" value="Adicionar">
+     </form> 
+
+	 </center>
 </body>
 </html>
